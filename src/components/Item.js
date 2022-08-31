@@ -14,7 +14,7 @@ import { useState } from "react"
 export default function Item({addP,itemInfo}) {
   let [stockController,setStockController]=useState(itemInfo.stock)
   const [activate,setActivate]=useState(false)
-  console.log(stockController);
+  
   function stock(){
     if (stockController<=1){
       setActivate(true)
